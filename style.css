@@ -9,8 +9,16 @@ a:hover, button:hover{
 #container{
     height: 100vh;
     width: 100vw;
+    position: relative;
 }
+nav{
+    position: sticky;
+    top: 0px;
+    z-index:2;
+    background-color: white;
+    flex-wrap: wrap;
 
+}
 #nav-right>*{
     margin: 10px;
 }
@@ -232,7 +240,7 @@ a:hover, button:hover{
     max-width: 1500px;   
     grid-gap: 50px;
     justify-content: space-around;
-    overflow: scroll;
+    overflow:auto;
 }
 #partner-section{
     text-align: center;
@@ -323,8 +331,14 @@ a:hover, button:hover{
     cursor: pointer;
 }
 @media screen and (max-width:1400px) {
+
+    #hero-section h2, #hero-section p{
+        width: 80%;
+        margin-left:30px
+    }
     #hero-section-card{
         width: 80%;
-        margin-top: 100px;
+        margin-top: 20px;
     }
+    
 }
