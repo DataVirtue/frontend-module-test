@@ -148,8 +148,10 @@
 #course-card-container{
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .course-card{
+    margin-top: 20px;
     background-color: white;
     text-align: center;
     padding: 30px;
@@ -210,6 +212,50 @@
     padding-inline: 15px;
     margin:18px;
     border-radius: 7px;
+}
+#logo-container{
+    
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1500px;   
+    grid-gap: 50px;
+    justify-content: space-around;
+    overflow: scroll;
+}
+#partner-section{
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+    padding: 50px;
+}
+#partner-section *{
+    margin: 20px;
+}
+#partner-section>div>h4:first-child{
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(to right, #992FED, #2F80ED);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+#partner-section>h2{
+    color: #2B2F34;
+}
+#partner-section h3{
+    color: #2F80ED;
+}
+#partner-section h5{
+    font-family: 'Poppins', sans-serif;
+    color: #595959;
+}
+#logo-container>img{
+    
+    width: 150px;
+    height: 36px;
+}
+.student-card{
+    display: flex;
 }
 @media screen and (max-width:1400px) {
     #hero-section-card{
